@@ -1,16 +1,15 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
-var MyTitle = require('./MyTitle')
+const React = require('react')
+const ReactDOM = require('react-dom')
 
   // This is an instance of the class
-  // This is when you are just returning 
-  // something (when you get rid of the { } the function assumes straight return)
-var MyFirstComponent = () => (
-  <div>
-    <MyTitle title='Whatevs' color='rebeccapurple' />
-    <MyTitle title='LOL' color='papayawhip' />
-    <MyTitle title='WHAOOOA' color='#f06d06' />
+const App = () => (
+  <div className='app-container'>
+    <div className="home-info">
+      <h1 className="title">svideo</h1>
+      <input type="text" className="search" placeholder="Search"/>
+      <button className="browse-all">or Browse All</button>
+    </div>
   </div>
 )
 
-ReactDOM.render(<MyFirstComponent />, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
