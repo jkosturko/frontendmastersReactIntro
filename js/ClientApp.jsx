@@ -3,6 +3,8 @@ var ReactDOM = require('react-dom')
 var MyTitle = require('./MyTitle')
 
   // This is an instance of the class
+  // This is when you are just returning 
+  // something (when you get rid of the { } the function assumes straight return)
 var MyFirstComponent = () => (
   <div>
     <MyTitle title='Whatevs' color='rebeccapurple' />
